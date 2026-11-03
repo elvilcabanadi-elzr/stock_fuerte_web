@@ -1,0 +1,20 @@
+:root{--bg:#f3f4f6;--c:#fff;--t:#1f2937;--d:#2b2f36;--o:#e8731a;--b:#e5e7eb}
+@media(prefers-color-scheme:dark){:root{--bg:#15171a;--c:#1f2227;--t:#e5e7eb;--b:#33373d}}
+*{box-sizing:border-box}body{margin:0;font:15px system-ui,Segoe UI,Arial;background:var(--bg);color:var(--t)}
+header{background:var(--d);color:#fff;display:flex;gap:16px;align-items:center;padding:10px 20px;flex-wrap:wrap}
+header b{font-size:20px}header span{color:var(--o)}nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+nav a{color:#cbd5e1;text-decoration:none;padding:6px 12px;border-radius:6px}nav a.on,nav a:hover{background:#3b4048;color:#fff}
+header small a{color:var(--o)}main{max-width:1100px;margin:20px auto;padding:0 16px}
+h2{margin:0 0 12px}.card{background:var(--c);border:1px solid var(--b);border-radius:10px;padding:16px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.k{font-size:28px;font-weight:700;color:var(--o)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}.bar .s{flex:1}
+input,select{padding:8px;border:1px solid var(--b);border-radius:6px;background:var(--c);color:var(--t);width:100%}
+.bar input,.bar select{width:auto}label{display:block;margin:8px 0;font-size:13px}
+.btn{background:var(--o);color:#fff;border:0;padding:8px 14px;border-radius:6px;cursor:pointer;font-size:14px}.btn.g{background:#6b7280}.btn.r{background:#dc2626}.btn.s{padding:4px 9px;font-size:12px}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse}th{background:var(--d);color:#fff;text-align:left}th,td{padding:8px;border-bottom:1px solid var(--b);font-size:13px;white-space:nowrap}
+.bd{padding:2px 8px;border-radius:10px;font-size:12px;background:#dcfce7;color:#166534}.bd.x{background:#fee2e2;color:#991b1b}.bd.a{background:#e5e7eb;color:#374151}
+dialog{border:0;border-radius:10px;padding:20px;width:min(420px,94vw);background:var(--c);color:var(--t)}dialog::backdrop{background:#0008}
+.err{color:#dc2626;min-height:18px;font-size:13px}.row{display:flex;gap:8px}.info{background:var(--bg);padding:8px;border-radius:6px;font-size:13px;min-height:36px}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);padding:10px 18px;border-radius:8px;color:#fff;display:none;z-index:9}
+.login{max-width:340px;margin:12vh auto}.hint{font-size:12px;color:#6b7280}
+@media print{header,.bar,button{display:none!important}}
